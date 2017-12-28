@@ -3,6 +3,7 @@
 - crawl the magnet for joy
 ## sshscan
 - brute password guess over ssh
-## getvideos
+## videos
 - get videos 
-
+## crawler
+- a crawler
