@@ -2,5 +2,7 @@
 ## simpleSipder
 - crawl the magnet for joy
 ## sshscan
--brute password guess over ssh
+- brute password guess over ssh
+## getvideos
+- get videos 
 
