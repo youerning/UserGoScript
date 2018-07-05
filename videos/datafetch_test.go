@@ -9,36 +9,16 @@ import (
 	"testing"
 )
 
+const dbDestTest = "video-resource-test.db"
+
 func Test_const(t *testing.T) {
 	fmt.Println(dbDest)
 }
 
 func Test_Fetch(t *testing.T) {
 	t.Log("fetch start")
-	Fetch(1, dbDestTest)
+	Fetch(10, dbDestTest)
 	t.Log("fetch done")
-}
-
-func Test_Select(t *testing.T) {
-	var err error
-	var v VideoORM
-	DBInit(dbDestTest)
-	db, err := gorm.Open("sqlite3", dbDestTest)
-	CheckErr(err)
-	defer db.Close()
-	db.Find(&v, 1)
-	fmt.Println(v)
-}
-
-func Test_JsonOut(t *testing.T) {
-	var err error
-	var v VideoORM
-	DBInit(dbDestTest)
-	db, err := gorm.Open("sqlite3", dbDestTest)
-	CheckErr(err)
-	defer db.Close()
-	db.Find(&v, 1)
-	fmt.Println(JsonOut(v))
 }
 
 func Test_CatalogStore(t *testing.T) {
