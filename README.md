@@ -9,3 +9,5 @@
 - a crawler
 ## proxyCollect
 - collect proxy
+## simple spider
+- a spider crawl profile from dating website,zhenai
